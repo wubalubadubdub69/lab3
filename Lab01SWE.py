@@ -54,12 +54,15 @@ else:
     datei = (" ".join(date.split()[:3]))
     print(f" You will finish after {math.ceil(len(tasks)/workload)} days on {datei}")
     print(f"after {howManySecs(tasks, workload)} secs")
+    print(f"after {howManyDays(tasks, workload)} days")
     
 
 def howManySecs(tasks, workload):
     secs = 86400*(len(tasks)/workload)
     return secs
             
+def howManyDays(tasks, workload):
+    return secs = 86400*(len(tasks)/workload)/(60*60*24)
         
     
     
