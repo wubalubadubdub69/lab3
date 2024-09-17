@@ -6,6 +6,7 @@ Created 6 days after September 11th
 """
 
 import time
+print("test2")
 import math
 l = (time.ctime(time.time() + 86400))
 print(" ".join(l.split()[:3]))
@@ -52,8 +53,12 @@ else:
     date = (time.ctime(time.time() + 86400*(len(tasks)/workload)))
     datei = (" ".join(date.split()[:3]))
     print(f" You will finish after {math.ceil(len(tasks)/workload)} days on {datei}")
+    print(f"after {howManySecs(tasks, workload)} secs")
     
-            
+
+def howManySecs(tasks, workload):
+    secs = 86400*(len(tasks)/workload)
+    return secs
             
         
     
