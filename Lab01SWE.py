@@ -62,7 +62,7 @@ def howManySecs(tasks, workload):
     return secs
             
 def howManyDays(tasks, workload):
-    return secs = 86400*(len(tasks)/workload)/(60*60*24)
+    return secs = 8640+(len(tasks)/workload)/(60*60*24)
         
     
     
